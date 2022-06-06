@@ -56,11 +56,10 @@ header{
 
 .inner-header-container{
     height: 18vh;
-    padding-top: 1rem;
     background-color: rgb(255, 255, 255, 0.3);
 }
 
-.header-sticky{
+.container-header{
     position: sticky;
     top: 0;
 }
@@ -105,7 +104,7 @@ header{
 
 /* Responsive menu */
 .menu-toggle{
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
     display: flex;
     flex-direction: column;
 }
@@ -127,7 +126,7 @@ header{
 .nav-menu {
     position: fixed;
     left: -100%;
-    top: 10rem;
+    top: 9rem;
     flex-direction: column;
     background-color: #6c6c6c;
     color: #141414;
@@ -210,7 +209,7 @@ header{
     .navbar {
         display: flex;
         align-items: center;
-        padding: 1rem 1.5rem;
+        padding: 0 1.5rem;
     }
 
     .nav-menu {
@@ -222,6 +221,11 @@ header{
         left: 0;
         top: 0;
         border: none;
+    }
+
+    .menu-toggle{
+        padding-top: 0;
+        justify-content: center;
     }
     
     .nav-item {
