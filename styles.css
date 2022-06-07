@@ -33,6 +33,13 @@ body{
 
 @font-face {
     font-family: 'OpenSans';
+    src: url('fonts/opensans/OpenSans-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
     src: url('fonts/opensans/OpenSans-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
@@ -55,7 +62,7 @@ header{
 }
 
 .inner-header-container{
-    height: 18vh;
+    height: 20vh;
     background-color: rgb(255, 255, 255, 0.3);
 }
 
@@ -166,6 +173,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    padding: 0 10px;
 }
 
 .content-container>p:first-child{
@@ -198,6 +206,7 @@ header{
     padding: 15px;
     border-radius: 30px;
     background-color: #aca830;
+    margin-left: 10px;
 }
 
 .donatebutton{
@@ -210,6 +219,142 @@ header{
     border: none;
 }
 
+.section_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.history{
+    padding: 0 10px 10px 10px;
+}
+
+.history-texts{
+    padding-bottom: 30px;
+}
+
+.history-texts>h2{
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Roboto Slab', serif;
+    border-left: 1px solid #aca830;
+    margin: 20px 0 15px 0;
+    padding-left: 30px;
+    color: #534d51;
+}
+
+.history-texts>p{
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Open Sans', sans-serif;
+    color: #96948f;
+    padding-left: 30px;
+    line-height: 1.4;
+}
+
+.values{
+    padding: 35px 35px 10px 20px;
+    background: #f7f6ef;
+}
+
+.introduction-values>h2{
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Roboto Slab', serif;
+    color: #534d51;
+}
+
+.introduction-values>p{
+    font-size: 18px;
+    font-family: 'OpenSans', sans-serif;
+    color: #96948f;
+    font-weight: lighter;
+}
+
+.value{
+    padding: 5px 0;
+}
+
+.value>h3{
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #534d51;
+    padding: 10px 0;
+}
+
+.value>p{
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Open Sans', sans-serif;
+    color: #96948f;
+    line-height: 1.4;
+}
+
+.value>img{
+    width: 95px;
+}
+
+.history-texts>ul{
+    list-style: none;
+    padding-left: 30px;
+}
+
+.history-texts>ul>li{
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Open Sans', sans-serif;
+    color: #96948f;
+    margin-bottom: 11px;
+}
+
+.fa-chevron-right{
+    color: #aca830;
+    padding-right: 10px;
+}
+
+.history-img{
+    width: 90vw;
+    margin: auto;
+}
+
+.history-img>img{
+    width: 100%;
+}
+
+.facts{
+    background-color: #ccc;
+    padding: 30px 10px;
+}
+
+.fact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fact>p:first-child{
+    text-transform: uppercase;
+    color: #aca830;
+    font-size: 14px;
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 700;
+}
+
+.fact>p:nth-child(2){
+    font-style: normal;
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
+}
+
+.fact>hr{
+    border-top: 2px solid #aca830;
+    width: 8vw;
+}
 
 @media (max-width: 479px) {
     .header-texts>p{
@@ -292,11 +437,35 @@ header{
         color: #482ff7;
     }
     
-    /* .nav-logo {
-        font-size: 2.1rem;
-        font-weight: 500;
-        color: #482ff7;
-    } */
+    .history-texts>h2{
+        font-size: 30px;
+        /* font-weight: 400;
+        font-style: normal;
+        font-family: 'Roboto Slab', serif; */
+    }
+
+    .history-texts>p{
+        font-size: 14px;
+        /* font-weight: 400;
+        font-style: normal;
+        font-family: 'Open Sans', sans-serif; */
+    }
+
+    .history-texts>ul>li{
+        font-size: 14px;
+        /* font-weight: 400;
+        font-style: normal;
+        font-family: 'Open Sans', sans-serif;
+        color: #96948f; */
+    }
+
+    .value>h3{
+        font-size: 18px;
+    }
+
+    .introduction-values>h2{
+        font-size: 30px;
+    }
 }
 
 @media (min-width: 1039px) {
@@ -323,9 +492,33 @@ header{
         color: #482ff7;
     }
     
-    /* .nav-logo {
-        font-size: 2.1rem;
-        font-weight: 500;
-        color: #482ff7;
-    } */
+    .history-texts>h2{
+        font-size: 25px;
+        font-weight: 400;
+        font-style: normal;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    .history-texts>p{
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .value>h3{
+        font-size: 24px;
+    }
+
+    .introduction-values>h2{
+        font-size: 25px;
+    }
+
+    .introduction-values>p{
+        font-size: 20px;
+    }
+
+    .fact>p:first-child{
+        font-size: 15px;
+    }
 }
