@@ -63,11 +63,12 @@ header{
 
 .inner-header-container{
     height: 20vh;
+    transition: 0.4s;
     background-color: rgb(255, 255, 255, 0.3);
 }
 
 .dark{
-    transition: 0.3s;
+    transition: 0.4s;
     background-color: #6c6c6c;
 }
 
