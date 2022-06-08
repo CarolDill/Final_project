@@ -21,25 +21,25 @@ time, mark, audio, video {
 }
 
 body{
-    font-family: 'OpenSans';
+    font-family: 'Open Sans', sans-serif;
 }
 
 @font-face {
-    font-family: 'OpenSans';
+    font-family: 'Open Sans';
     src: url('fonts/opensans/OpenSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'OpenSans';
+    font-family: 'Open Sans';
     src: url('fonts/opensans/OpenSans-Light.ttf') format('truetype');
     font-weight: lighter;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'OpenSans';
+    font-family: 'Open Sans';
     src: url('fonts/opensans/OpenSans-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
@@ -66,11 +66,16 @@ header{
     background-color: rgb(255, 255, 255, 0.3);
 }
 
-.container-header{
+.dark{
+    transition: 0.3s;
+    background-color: #6c6c6c;
+}
+
+/* .container-header{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-}
+} */
 
 .header-section{
     display: flex;
@@ -90,6 +95,12 @@ header{
     width: 60px;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .header-texts{
     display: flex;
     flex-direction: column;
@@ -99,7 +110,7 @@ header{
 .header-texts>p{
     font-weight: 400;
     font-style: normal;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     color: #ffffff;
 }
 
@@ -177,7 +188,7 @@ header{
 }
 
 .content-container>p:first-child{
-    font-family: 'OpenSans';
+    /* font-family: 'OpenSans'; */
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bolder;
@@ -194,7 +205,7 @@ header{
 .content-container>p:last-child{
     font-weight: 300;
     font-style: normal;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     color: #ffffff;
 }
 
@@ -210,7 +221,7 @@ header{
 }
 
 .donatebutton{
-    font-family: 'OpenSans';
+    font-family: 'Open Sans';
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
@@ -268,7 +279,7 @@ header{
 
 .introduction-values>p{
     font-size: 18px;
-    font-family: 'OpenSans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     color: #96948f;
     font-weight: lighter;
 }
@@ -289,7 +300,7 @@ header{
     font-size: 13px;
     font-weight: 400;
     font-style: normal;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     color: #96948f;
     line-height: 1.4;
 }
@@ -307,7 +318,7 @@ header{
     font-size: 13px;
     font-weight: 400;
     font-style: normal;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     color: #96948f;
     margin-bottom: 11px;
 }
@@ -331,30 +342,77 @@ header{
     padding: 30px 10px;
 }
 
-.fact{
+.fact, .first-fact{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px 0;
 }
 
-.fact>p:first-child{
+.first-fact:first-child>p{
     text-transform: uppercase;
     color: #aca830;
     font-size: 14px;
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
     font-weight: 700;
 }
 
+.first-fact>p:nth-child(2){
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.first-fact>hr{
+    border-top: 2px solid #aca830;
+    width: 8vw;
+}
+
+.fact>p{
+    /* font-family: 'Open Sans', sans-serif; */
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+}
+
 .fact>p:nth-child(2){
-    font-style: normal;
+    font-size: 30px;
+    font-weight: 700;
     font-family: 'Roboto Slab', serif;
     color: #ffffff;
 }
 
-.fact>hr{
-    border-top: 2px solid #aca830;
-    width: 8vw;
+.fa-instagram-square, .fa-facebook-square, .fa-snapchat-square, .fa-twitter-square{
+    color: #ffffff;
 }
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #141414;
+    padding-bottom: 20px;
+}
+
+.logo-footer{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo-footer-img img{
+    width: 60px;
+    padding-right: 20px;
+}
+
+.copyright-footer p{
+    /* font-family: 'Open Sans', sans-serif; */
+    color: #96948f;
+    font-size: 13px;
+    padding-top: 20px;
+}
+
 
 @media (max-width: 479px) {
     .header-texts>p{
@@ -427,8 +485,6 @@ header{
     }
 
     .nav-menu a{
-        text-decoration: none;
-        color:#ffffff;
         font-size: 1.2rem;
         font-weight: 400;
     }
@@ -466,6 +522,18 @@ header{
     .introduction-values>h2{
         font-size: 30px;
     }
+
+    .fact:first-child>p{
+        font-size: 15px;
+    }
+
+    .fact>p{
+        font-size: 14px;
+    }
+
+    .fact>p:nth-child(2){
+        font-size: 35px;
+    }
 }
 
 @media (min-width: 1039px) {
@@ -494,16 +562,11 @@ header{
     
     .history-texts>h2{
         font-size: 25px;
-        font-weight: 400;
-        font-style: normal;
-        font-family: 'Roboto Slab', serif;
     }
 
     .history-texts>p{
         font-size: 14px;
-        font-weight: 400;
-        font-style: normal;
-        font-family: 'Open Sans', sans-serif;
+        /* font-family: 'Open Sans', sans-serif; */
     }
 
     .value>h3{
@@ -520,5 +583,17 @@ header{
 
     .fact>p:first-child{
         font-size: 15px;
+    }
+
+    .fact:first-child>p{
+        font-size: 16px;
+    }
+
+    .fact>p{
+        font-size: 16px;
+    }
+
+    .fact>p:nth-child(2){
+        font-size: 60px;
     }
 }
