@@ -111,6 +111,7 @@ header{
 .header-texts>p{
     font-weight: 400;
     font-style: normal;
+    font-size: 14px;
     /* font-family: 'Open Sans', sans-serif; */
     color: #ffffff;
 }
@@ -118,6 +119,7 @@ header{
 .header-texts>p:first-child{
     font-weight: 700;
     font-style: normal;
+    font-size: 28px;
     font-family: 'Roboto Slab', serif;
     color: #ffffff;
 }
@@ -166,6 +168,11 @@ header{
     margin: 2.5rem 0;
 }
 
+.nav-item a:hover{
+    color: #aca830;
+    font-weight: 700;
+}
+
 .hamburger {
     display: block;
     cursor: pointer;
@@ -206,6 +213,7 @@ header{
 .content-container>p:last-child{
     font-weight: 300;
     font-style: normal;
+    font-size: 18px;
     /* font-family: 'Open Sans', sans-serif; */
     color: #ffffff;
 }
@@ -219,6 +227,7 @@ header{
     border-radius: 30px;
     background-color: #aca830;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .donatebutton{
@@ -229,6 +238,7 @@ header{
     color: #ffffff;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .section_wrapper{
@@ -268,6 +278,10 @@ header{
 .values{
     padding: 35px 35px 10px 20px;
     background: #f7f6ef;
+}
+
+.introduction-values{
+    margin-bottom: 15px;
 }
 
 .introduction-values>h2{
@@ -414,20 +428,13 @@ footer{
     padding-top: 20px;
 }
 
-
-@media (max-width: 479px) {
-    .header-texts>p{
-        font-size: 14px;
-    }
-
-    .header-texts>p:first-child{
-        font-size: 28px;
-    }
-}
-
 @media (min-width: 480px) {
     .header-texts>p:first-child{
         font-size: 26px;
+    }
+
+    .content-container>h1{
+        font-size: 40px;
     }
 }
 
@@ -449,7 +456,7 @@ footer{
         font-size: 22px;
     }
 
-    /*Responsive menu*/
+        /*Responsive menu*/
     .inner-header-container{
         display: flex;
         justify-content: space-between;
@@ -490,12 +497,29 @@ footer{
         font-weight: 400;
     }
 
-    .nav-link:hover{
-        color: #482ff7;
+    #active{
+        color: #aca830;
+        font-weight: 700;
+    }
+
+    .content-container>h1{
+        font-size: 35px;
+    }
+
+    .content-container>p:last-child{
+        font-size: 20px;
+    }
+
+    .section_wrapper{
+        flex-direction: row;
+    }
+
+    .history-texts{
+        padding-right: 15px;
     }
     
     .history-texts>h2{
-        font-size: 30px;
+        font-size: 25px;
         /* font-weight: 400;
         font-style: normal;
         font-family: 'Roboto Slab', serif; */
@@ -516,16 +540,28 @@ footer{
         color: #96948f; */
     }
 
-    .value>h3{
-        font-size: 18px;
+    .values-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
     }
 
     .introduction-values>h2{
         font-size: 30px;
     }
 
+    .introduction-values>p{
+        font-size: 20px;
+    }
+
     .fact:first-child>p{
         font-size: 15px;
+    }
+
+    .facts{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
     }
 
     .fact>p{
@@ -534,6 +570,18 @@ footer{
 
     .fact>p:nth-child(2){
         font-size: 35px;
+    }
+
+    .first-fact{
+        grid-area: 1 / 1 / 1 / span 3;
+    }
+
+    .first-fact>p:nth-child(2){
+        font-size: 25px;
+    }
+
+    .copyright-footer p{
+        font-size: 14px;
     }
 }
 
@@ -560,18 +608,56 @@ footer{
     .nav-link:hover{
         color: #482ff7;
     }
+
+    .header-content{
+        max-width: 80vw;
+        margin: auto;
+    }
+
+    .button-area{
+        max-width: 80vw;
+        margin: auto;
+    }
+
+    .history{
+        padding: 100px 10vw 0 10vw;
+    }
     
     .history-texts>h2{
-        font-size: 25px;
+        font-size: 40px;
     }
 
     .history-texts>p{
-        font-size: 14px;
+        font-size: 16px;
         /* font-family: 'Open Sans', sans-serif; */
+    }
+
+    .content-container>p:first-child{
+        font-size: 16px;
+    }
+
+    .content-container>h1{
+        font-size: 60px;
+    }
+
+    .content-container>p:last-child{
+        font-size: 24px;
+    }
+
+    .history-texts>ul>li{
+        font-size: 16px;
+    }
+
+    .values{
+        padding: 160px 10vw;
     }
 
     .value>h3{
         font-size: 24px;
+    }
+
+    .introduction-values{
+        padding: 0 35px;
     }
 
     .introduction-values>h2{
@@ -579,11 +665,23 @@ footer{
     }
 
     .introduction-values>p{
-        font-size: 20px;
+        font-size: 24px;
     }
 
-    .fact>p:first-child{
-        font-size: 15px;
+    .values-wrapper{
+        padding: 0 35px;
+    }
+
+    .value>p{
+        font-size: 16px;
+    }
+
+    .first-fact:first-child>p{
+        font-size: 16px;
+    }
+
+    .facts{
+        padding: 200px calc(10px + 10vw);
     }
 
     .fact:first-child>p{
@@ -596,5 +694,18 @@ footer{
 
     .fact>p:nth-child(2){
         font-size: 60px;
+    }
+
+    .first-fact>p:nth-child(2){
+        font-size: 40px;
+    }
+
+    footer{
+        min-height: 18vw;
+        justify-content: space-evenly;
+    }
+
+    .copyright-footer p{
+        font-size: 16px;
     }
 }
