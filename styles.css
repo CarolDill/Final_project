@@ -499,6 +499,38 @@ header{
     cursor: pointer;
 }
 
+.volunteers_wrapper{
+    padding: 50px 10px;
+}
+
+.volunteer{
+    width: 280px;
+    margin: auto;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.volunter:last-child{
+    padding-top: 50px;
+}
+
+.volunteer>.volunteer_image>img{
+    width: 100%;
+}
+
+.volunteer>h3{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 18px;
+    color:#534d51;
+}
+
+.volunteer>p{
+    font-size: 13px;
+    color: #96948f;
+}
+
 .fa-instagram-square, .fa-facebook-square, .fa-snapchat-square, .fa-twitter-square{
     color: #ffffff;
 }
