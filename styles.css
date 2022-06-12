@@ -151,7 +151,7 @@ header{
     top: 9.5rem;
     flex-direction: column;
     background-color: #6c6c6c;
-    color: #141414;
+    color: #aca830;
     width: 100%;
     border-radius: 10px;
     text-align: center;
@@ -184,7 +184,7 @@ header{
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
-    background-color: #141414;
+    background-color: #aca830;
 }
 
 .header-content{
@@ -357,14 +357,14 @@ header{
     padding: 30px 10px;
 }
 
-.fact, .first-fact{
+.fact, .first-fact, .row{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 0;
 }
 
-.first-fact:first-child>p{
+.first-fact:first-child>p, .row>p{
     text-transform: uppercase;
     color: #aca830;
     font-size: 14px;
@@ -379,9 +379,16 @@ header{
     font-weight: 400;
 }
 
-.first-fact>hr{
+.first-fact>hr, .row>hr{
     border-top: 2px solid #aca830;
     width: 8vw;
+}
+
+.row>h2{
+    font-family: 'Roboto Slab', serif;
+    color: #534d51;
+    font-size: 20px;
+    padding-bottom: 7px;
 }
 
 .fact>p{
@@ -396,6 +403,100 @@ header{
     font-weight: 700;
     font-family: 'Roboto Slab', serif;
     color: #ffffff;
+}
+
+.testimony_wrapper{
+    margin: 0 10px;
+}
+
+.testimony{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #f7f6ef;
+    margin-bottom: 15px;
+}
+
+#quotes{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: #e8e8e8;
+}
+
+#divider{
+    width: 10vw;
+}
+
+#divider>hr{
+    border-top: 2px solid #aca830;
+}
+
+.testimony>cite:before{
+    content: "-";
+}
+
+.testimony>cite{
+    font-size: 13px;
+    color: #534d51;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+}
+
+.testimony>blockquote{
+    font-size: 13px;
+    color: #96948f;
+}
+
+.news_wrapper{
+    padding: 0 10px;
+}
+
+.new{
+    margin-bottom: 20px;
+}
+
+.new>h3{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: #2c292b;
+    padding: 0 10px;
+}
+
+.new>p{
+    color: #96948f;
+    font-size: 14px;
+    padding: 0 6px;
+}
+
+.new_image{
+    padding: 6px 10px 13px 10px;
+}
+
+.new_image>img{
+    width: 100%;
+}
+
+.load_more{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.load_more>button{
+    background-color: #aca830;
+    border: #aca830;
+    padding: 12px 15px 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.load_more>button>span{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
 }
 
 .fa-instagram-square, .fa-facebook-square, .fa-snapchat-square, .fa-twitter-square{
@@ -554,7 +655,7 @@ footer{
         font-size: 20px;
     }
 
-    .fact:first-child>p{
+    .fact:first-child>p, .row>p{
         font-size: 15px;
     }
 
@@ -576,8 +677,55 @@ footer{
         grid-area: 1 / 1 / 1 / span 3;
     }
 
-    .first-fact>p:nth-child(2){
+    .first-fact>p:nth-child(2), .row>h2{
         font-size: 25px;
+    }
+
+    .testimonials{
+        padding: 30px 0;
+    }
+
+    .testimony_wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .testimony{
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        grid-gap: 10px;
+    }
+
+    #divider{
+        grid-area: 2 / 2 / 2 / 2;
+    }
+
+    .testimony>cite{
+        grid-area: 3 / 2 / 3 / 2;
+    }
+
+    .testimony>blockquote{
+        font-size: 14px;
+    }
+
+    .news_wrapper{
+        width: 70vw;
+        margin: auto;
+    }
+
+    .new{
+        display: grid;
+        grid-template-columns: 55% 1fr;
+        grid-gap: 10px;
+    }
+
+    .new>h3{
+        grid-area: 1 / 1 / 1 / span 2;
+    }
+
+    .new>p{
+        font-size: 15px;
     }
 
     .copyright-footer p{
@@ -606,7 +754,7 @@ footer{
     }
 
     .nav-link:hover{
-        color: #482ff7;
+        color: #aca830;
     }
 
     .header-content{
@@ -684,7 +832,7 @@ footer{
         padding: 200px calc(10px + 10vw);
     }
 
-    .fact:first-child>p{
+    .fact:first-child>p, .row>p{
         font-size: 16px;
     }
 
@@ -696,8 +844,29 @@ footer{
         font-size: 60px;
     }
 
-    .first-fact>p:nth-child(2){
+    .first-fact>p:nth-child(2), .row>h2{
         font-size: 40px;
+    }
+
+    .testimonials{
+        padding: 40px 0 80px 0;
+    }
+
+    #quotes{
+        font-size: 60px
+    }
+
+    .testimony>blockquote{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+    }
+
+    .testimony{
+        grid-gap: 15px;
+    }
+
+    .news_wrapper{
+        width: 60vw;
     }
 
     footer{
