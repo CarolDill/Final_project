@@ -501,18 +501,21 @@ header{
 
 .volunteers_wrapper{
     padding: 50px 10px;
-}
-
-.volunteer{
-    width: 280px;
-    margin: auto;
     display: flex;
-    justify-items: center;
+    align-items: center;
     flex-direction: column;
 }
 
-.volunter:last-child{
-    padding-top: 50px;
+.volunteer{
+    max-width: 280px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.volunteers_wrapper>div:not(div:last-child){
+    padding-bottom: 30px;
 }
 
 .volunteer>.volunteer_image>img{
@@ -529,6 +532,31 @@ header{
 .volunteer>p{
     font-size: 13px;
     color: #96948f;
+}
+
+.information{
+    background-image: url('images/become_volunteer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 83%;
+    padding: 50px 0;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column>h2{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.column>p{
+    font-size: 18px;
+    color: #ffffff;
 }
 
 .fa-instagram-square, .fa-facebook-square, .fa-snapchat-square, .fa-twitter-square{
@@ -639,7 +667,7 @@ footer{
         font-size: 35px;
     }
 
-    .content-container>p:last-child{
+    .content-container>p:last-child, .column>p{
         font-size: 20px;
     }
 
@@ -651,7 +679,7 @@ footer{
         padding-right: 15px;
     }
     
-    .history-texts>h2{
+    .history-texts>h2, .column>h2{
         font-size: 25px;
         /* font-weight: 400;
         font-style: normal;
@@ -803,24 +831,24 @@ footer{
         padding: 100px 10vw 0 10vw;
     }
     
-    .history-texts>h2{
+    .history-texts>h2, .column>h2{
         font-size: 40px;
     }
 
-    .history-texts>p{
+    .history-texts>p, .content-container>p:first-child{
         font-size: 16px;
         /* font-family: 'Open Sans', sans-serif; */
     }
 
-    .content-container>p:first-child{
+    /* .content-container>p:first-child{
         font-size: 16px;
-    }
+    } */
 
     .content-container>h1{
         font-size: 60px;
     }
 
-    .content-container>p:last-child{
+    .content-container>p:last-child, .column>p{
         font-size: 24px;
     }
 
@@ -899,6 +927,26 @@ footer{
 
     .news_wrapper{
         width: 60vw;
+    }
+
+    .volunteers{
+        max-width: 80vw;
+        margin: auto;
+    }
+
+    .volunteers_wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+
+    .volunteers_wrapper>div:last-child{
+        padding-bottom: 30px;
+    }
+
+    .information{
+        padding: 150px 0;
+        background-position: 100% 60%;
     }
 
     footer{
