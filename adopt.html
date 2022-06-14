@@ -38,7 +38,7 @@
                                 <a href="adopt.html" class="nav-link" id="active">Adopt</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Donate</a>
+                                <a href="volunteer.html" class="nav-link">Volunteer</a>
                             </li>
                         </ul>
                         <div class="hamburger">
@@ -190,6 +190,35 @@
                 </div>
                 <div class="pet">
                     <div class="pet_img">
+                        <img src="images/suzy.jpg" alt="White cat with black and brown spots in the back, on the grass ">
+                    </div>
+                    <div></div>
+                    <div class="pet_description">
+                        <h3>Suzy</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Age:</td>
+                                    <td>Weight:</td>
+                                    <td>Type:</td>
+                                    <td>Breed:</td>
+                                    <td>Additional Info:</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>3 years</td>
+                                    <td>8 lbs</td>
+                                    <td>Cat</td>
+                                    <td>Unknown/Mixed</td>
+                                    <td>Docile with other pets</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="pet">
+                    <div class="pet_img">
                         <img src="images/mira.jpg" alt="Yellow dog puppy looking up">
                     </div>
                     <div></div>
@@ -217,6 +246,56 @@
                         </table>
                     </div>
                 </div>
+            </div>
+            <br>
+            <div class="row">
+                <hr>
+                <br>
+            </div>
+        </section>
+        <section class="adoption_form">
+            <div class="row">
+                <p>Decided?</p>
+                <h2>If you wish to go ahead, please fill out the form </h2>
+                <hr>
+                <p id="black">Do not hesitate in contact us</p>
+                <br>
+                <p>phone us at</p>
+                <p id="black">(778) 123 4567</p>
+                <br>
+                <p>Email us at</p>
+                <p id="black">contact@belovedshelter.com</p>
+            </div>
+            <div class="form">
+                <div class="form_texts">
+                    <p>New Adopter</p>
+                    <p>All the information is required</p>
+                </div>
+                <form action="get">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Name *">
+                    <label>Email</label>
+                    <input type="email"placeholder="Email *">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="Phone Number *">
+                    <label>Adress</label>
+                    <input type="text" placeholder="Address *">
+                    <label>City</label>
+                    <input type="text" placeholder="City">
+                    <fieldset>
+                        <label>Animal type</label>
+                        <input type="checkbox" name="dog" id="dog" value="dog">
+                        <label for="dog">Dog</label>
+                        <input type="checkbox" name="cat" id="cat" value="cat">
+                        <label for="cat">Cat</label>
+                    </fieldset>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message:"></textarea>
+                    <br>
+                    <div class="load_more">
+                        <button type="submit"><span>Submit</span></button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>

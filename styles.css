@@ -387,6 +387,7 @@ header{
     color: #534d51;
     font-size: 20px;
     padding-bottom: 7px;
+    text-align: center;
 }
 
 .fact>p{
@@ -579,8 +580,18 @@ header{
     color: #ffffff;
 }
 
+.pets_wrapper{
+    max-height: 60vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 
 .pet{
+    max-width: 380px;
     display: flex;
     background-color: #f7f6ef;
     padding: 10px;
@@ -652,6 +663,59 @@ td{
 .pet_description{
     display: flex;
     flex-direction: column;
+}
+
+.form{
+    background-color: #ccc;
+    padding: 30px 40px;
+    max-width: 385px;
+    margin: 10px auto 20px auto;
+}
+
+#black{
+    color: #534d51;
+}
+
+.form_texts{
+    padding-bottom: 20px;
+}
+
+.form_texts>p:first-child{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.form_texts>p{
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.form>form>label{
+    display: none;
+}
+
+.form>form>input, textarea, fieldset{
+    width: calc(100% - 45px);
+    border-color: transparent;
+    background-color: #6c6c6c;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-bottom: 2px;
+}
+
+fieldset{
+    width: calc(100% - 41px);
+}
+
+textarea{
+    width: calc(100% - 43px);
+}
+
+
+.form>form>input::placeholder, textarea::placeholder, fieldset>label{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
 }
 
 footer{
@@ -879,6 +943,17 @@ footer{
         font-size: 15px;
     }
 
+    .general_info, .animals{
+        max-width: 80vw;
+        margin: auto;
+    }
+
+    .pets_wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
     .copyright-footer p{
         font-size: 14px;
     }
@@ -958,7 +1033,7 @@ footer{
         font-size: 25px;
     }
 
-    .introduction-values>p{
+    .introduction-values>p, .form_texts>p:first-child{
         font-size: 24px;
     }
 
@@ -1033,6 +1108,27 @@ footer{
     .information{
         padding: 150px 0;
         background-position: 100% 60%;
+    }
+
+    .pets_wrapper{
+        max-width: 60vw;
+        margin: auto;
+    }
+
+    .adoption_form{
+        display: grid;
+        max-width: 80vw;
+        margin: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .adoption>h3{
+        font-size: 20px;
+    }
+
+    .adoption>p, .form_texts>p{
+        font-size: 15px;
     }
 
     footer{
