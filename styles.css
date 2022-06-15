@@ -301,7 +301,7 @@ header{
     padding: 5px 0;
 }
 
-.value>h3{
+.value>h3, .history-texts>h3{
     font-size: 18px;
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
@@ -672,6 +672,10 @@ td{
     margin: 10px auto 20px auto;
 }
 
+.adoption_form{
+    padding: 0 10px;
+}
+
 #black{
     color: #534d51;
 }
@@ -716,6 +720,11 @@ textarea{
 .form>form>input::placeholder, textarea::placeholder, fieldset>label{
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
+}
+
+.be_volunteer{
+    padding: 50px 30px;
+    background-color: #e8e8e8;
 }
 
 footer{
