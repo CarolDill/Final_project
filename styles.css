@@ -77,12 +77,6 @@ header{
     background-color: #6c6c6c;
 }
 
-/* .container-header{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-} */
-
 .header-section{
     display: flex;
     padding: 10px 10px 0 10px;
@@ -117,7 +111,6 @@ header{
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
-    /* font-family: 'Open Sans', sans-serif; */
     color: #ffffff;
 }
 
@@ -206,7 +199,6 @@ header{
 }
 
 .content-container>p:first-child{
-    /* font-family: 'OpenSans'; */
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bolder;
@@ -224,7 +216,6 @@ header{
     font-weight: 300;
     font-style: normal;
     font-size: 18px;
-    /* font-family: 'Open Sans', sans-serif; */
     color: #ffffff;
 }
 
@@ -279,7 +270,6 @@ header{
     font-size: 13px;
     font-weight: 400;
     font-style: normal;
-    font-family: 'Open Sans', sans-serif;
     color: #96948f;
     padding-left: 30px;
     line-height: 1.4;
@@ -302,7 +292,6 @@ header{
 
 .introduction-values>p{
     font-size: 18px;
-    /* font-family: 'Open Sans', sans-serif; */
     color: #96948f;
     font-weight: lighter;
 }
@@ -323,7 +312,6 @@ header{
     font-size: 13px;
     font-weight: 400;
     font-style: normal;
-    /* font-family: 'Open Sans', sans-serif; */
     color: #96948f;
     line-height: 1.4;
 }
@@ -341,7 +329,6 @@ header{
     font-size: 13px;
     font-weight: 400;
     font-style: normal;
-    /* font-family: 'Open Sans', sans-serif; */
     color: #96948f;
     margin-bottom: 11px;
 }
@@ -401,7 +388,6 @@ header{
 }
 
 .fact>p{
-    /* font-family: 'Open Sans', sans-serif; */
     font-weight: 400;
     color: #ffffff;
     font-size: 13px;
@@ -615,10 +601,6 @@ header{
     margin-right: 10px;
 }
 
-/* .pet>div>hr{
-    border-right: 2px solid #aca830;
-} */
-
 .pet_img{
     width: 30%;
 }
@@ -641,7 +623,6 @@ thead{
 
 tbody{
     display: flex;
-    position: relative;
     overflow-x: auto;
     overflow-y: hidden;
     padding-left: 10px;
@@ -651,7 +632,6 @@ tr{
     display: flex;
     flex-direction: column;
     min-width: min-content;
-    /* flex-shrink: 0; */
 }
 
 td, th{
@@ -739,18 +719,11 @@ textarea{
 
 /*Calendar*/
 .calendar {
-    /* position: relative; */
     width: 280px;
     background-color: #ccc;
     box-sizing: border-box;
     border-radius: 8px;
     overflow: hidden;
-  }
-  
-  .calendar__picture {
-    /* position: relative; */
-    text-shadow: 0 2px 2px rgba(#000, 0.2);
-    box-sizing: border-box;
   }
   
   .calendar__date {
@@ -779,15 +752,10 @@ textarea{
   }
 
 .calendar__picture>h2{
-    /* font-family: 'Open Sans', sans-serif; */
-    /* margin: 0; */
     padding-left: 25px;
 }
 
 .calendar__picture>h3{
-    /* font-family: 'Open Sans', sans-serif; */
-    /* margin: 0; */
-    /* font-weight: 500; */
     padding-left: 25px;
 }
 
@@ -833,7 +801,6 @@ footer{
 }
 
 .copyright-footer p{
-    /* font-family: 'Open Sans', sans-serif; */
     color: #96948f;
     font-size: 13px;
     padding-top: 20px;
@@ -922,16 +889,10 @@ footer{
     
     .history-texts>h2, .column>h2{
         font-size: 25px;
-        /* font-weight: 400;
-        font-style: normal;
-        font-family: 'Roboto Slab', serif; */
     }
 
     .history-texts>p{
         font-size: 14px;
-        /* font-weight: 400;
-        font-style: normal;
-        font-family: 'Open Sans', sans-serif; */
     }
 
     .history-texts>ul>li{
@@ -1080,12 +1041,7 @@ footer{
 
     .history-texts>p, .content-container>p:first-child{
         font-size: 16px;
-        /* font-family: 'Open Sans', sans-serif; */
     }
-
-    /* .content-container>p:first-child{
-        font-size: 16px;
-    } */
 
     .content-container>h1{
         font-size: 60px;
@@ -1143,7 +1099,7 @@ footer{
         font-size: 16px;
     }
 
-    .fact>p:nth-child(2){
+    .fact>p:nth-child(2), #quotes{
         font-size: 60px;
     }
 
@@ -1155,12 +1111,8 @@ footer{
         padding: 100px 0 180px 0;
     }
 
-    #quotes{
-        font-size: 60px
-    }
-
     .testimony>blockquote{
-        font-family: 'Open Sans', sans-serif;
+        /* font-family: 'Open Sans', sans-serif; */
         font-size: 16px;
     }
 
