@@ -36,4 +36,23 @@ function myFunction() {
       navbar.classList.remove("sticky");
       navbar.classList.remove("dark");
     }
+}
+
+let loadMoreBtn = document.getElementById("load-more-btn");
+let currentItem = 1;
+
+loadMoreBtn.onclick = () => {
+  let boxes =[...document.querySelectorAll('.news_wrapper')];
+  console.log(boxes);
+
+  for (var i = currentItem; i < currentItem + 1; i++) {
+  boxes[i].style.display = "inline-block";
   }
+
+  currentItem += 1;
+
+  if (currentItem >= boxes.length) {
+      loadMoreBtn.style.display = "none";
+    }
+
+}
