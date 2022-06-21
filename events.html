@@ -7,6 +7,20 @@
 
     <link rel="stylesheet" href="styles.css">
 
+    <script src='main.js'></script>
+    <link rel='stylesheet' href='main.css'/>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+
+    </script>
+
     <title>Vancouver Shelter</title>
 </head>
 <body>
@@ -70,54 +84,11 @@
                     <h2>Check out our next Events</h2>
                     <hr>
                 </div>
-                <div class="calendar">
-                    <div class="calendar__picture">
-                      <h2>25, Sunday</h2>
-                      <h3>June</h3>
-                    </div>
-                    <div class="calendar__date">
-                      <div class="calendar__day">M</div>
-                      <div class="calendar__day">T</div>
-                      <div class="calendar__day">W</div>
-                      <div class="calendar__day">T</div>
-                      <div class="calendar__day">F</div>
-                      <div class="calendar__day">S</div>
-                      <div class="calendar__day">S</div>
-                      <div class="calendar__number"></div>
-                      <div class="calendar__number"></div>
-                      <div class="calendar__number"></div>
-                      <div class="calendar__number">1</div>
-                      <div class="calendar__number">2</div>
-                      <div class="calendar__number">3</div>
-                      <div class="calendar__number">4</div>
-                      <div class="calendar__number">5</div>
-                      <div class="calendar__number">6</div>
-                      <div class="calendar__number">7</div>
-                      <div class="calendar__number">8</div>
-                      <div class="calendar__number">9</div>
-                      <div class="calendar__number">10</div>
-                      <div class="calendar__number">11</div>
-                      <div class="calendar__number">12</div>
-                      <div class="calendar__number">13</div>
-                      <div class="calendar__number">14</div>
-                      <div class="calendar__number">15</div>
-                      <div class="calendar__number">16</div>
-                      <div class="calendar__number">17</div>
-                      <div class="calendar__number calendar__number--current">18</div>
-                      <div class="calendar__number">19</div>
-                      <div class="calendar__number">20</div>
-                      <div class="calendar__number">21</div>
-                      <div class="calendar__number">22</div>
-                      <div class="calendar__number">23</div>
-                      <div class="calendar__number">24</div>
-                      <div class="calendar__number">25</div>
-                      <div class="calendar__number">26</div>
-                      <div class="calendar__number">27</div>
-                      <div class="calendar__number">28</div>
-                      <div class="calendar__number">29</div>
-                      <div class="calendar__number">30</div>
-                    </div>
-                  </div>
+                <div id="container_calendar">
+                    <div id="calendar"></div>
+                </div>
+                
+                  
                 <div class="calendar_content">
                     <div class="event_text">
                         <h3>June 25 - Adoption Fair at Sunset Beach</h3>
@@ -163,10 +134,10 @@
             </div>
         </div>
         <div class="icons-footer">
-            <i class="fa-brands fa-instagram-square fa-2x"><a href="#"></a></i>
-            <i class="fa-brands fa-facebook-square fa-2x"><a href="#"></a></i>
-            <i class="fa-brands fa-snapchat-square fa-2x"><a href="#"></a></i>
-            <i class="fa-brands fa-twitter-square fa-2x"><a href="#"></a></i>
+            <a href="#"><i class="fa-brands fa-instagram-square fa-2x"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-square fa-2x"></i></a>
+            <a href="#"><i class="fa-brands fa-snapchat-square fa-2x"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter-square fa-2x"></i></a>
         </div>
         <div class="copyright-footer">
             <p>&copy;Copyright | Caroline 2022.</p>

@@ -77,6 +77,88 @@ header{
     background-color: #6c6c6c;
 }
 
+.container_header_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.card{
+    background-color: rgb(255, 255, 255, 0.4);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.container_header_login>.card>h1{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.container_header_login>.card>form>.label-float>input{
+    color: #ffffff;
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #aca830;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin: 5% 0;
+}
+
+.container_header_login>.card>form>.label-float>input:focus{
+    border-bottom: 2px solid #aca830;
+}
+
+.label-float>label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    pointer-events: none;
+    transition: all .4s ease-out;
+}
+
+.container_header_login>.card>form>.label-float>input:focus + label{
+    font-size: 13px;
+}
+
+.card>form>div>button{
+    background-color: transparent;
+    border-color: #aca830;
+    color: #ffffff;
+    padding: 7px;
+    font-weight: 700;
+    font-size: 12px;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+.card>form>div:last-child{
+    display: flex;
+    justify-content: center;
+}
+
+.card>form>button:hover{
+    background-color: #aca830;
+}
+
 .header-section{
     display: flex;
     padding: 10px 10px 0 10px;
@@ -99,6 +181,7 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
 }
 
 .header-texts{
@@ -284,7 +367,7 @@ header{
     margin-bottom: 15px;
 }
 
-.introduction-values>h2, .calendar__picture>h2{
+.introduction-values>h2{
     font-size: 20px;
     font-family: 'Roboto Slab', serif;
     color: #534d51;
@@ -521,7 +604,7 @@ header{
     width: 100%;
 }
 
-.volunteer>h3, .adoption>h3, .pet_description>h3, .calendar__picture>h3, .event_text>h3{
+.volunteer>h3, .adoption>h3, .pet_description>h3, .event_text>h3{
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
     font-size: 18px;
@@ -609,32 +692,32 @@ header{
     width: 100%;
 }
 
-table{
+.table_pet{
     display: flex;
     overflow: hidden;
     background: none;
 }
 
-thead{
+.thead_pet{
     display: flex;
     flex-shrink: 0;
     min-width: min-content;
 }
 
-tbody{
+.tbody_pet{
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
     padding-left: 10px;
 }
 
-tr{
+.tr_pet{
     display: flex;
     flex-direction: column;
     min-width: min-content;
 }
 
-td, th{
+.td{
     display: block;
 }
 
@@ -715,70 +798,6 @@ textarea{
 .volunteer_section{
     padding: 50px 30px;
     background-color: #e8e8e8;
-}
-
-/*Calendar*/
-.calendar {
-    width: 280px;
-    background-color: #ccc;
-    box-sizing: border-box;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .calendar__date {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
-    grid-gap: 10px;
-    box-sizing: border-box;
-  }
-  
-  .calendar__day {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 25px;
-    font-weight: 600;
-    color: #2c292b;
-  }
-  
-  .calendar__number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 25px;
-    color: #2c292b;
-  }
-
-.calendar__picture>h2{
-    padding-left: 25px;
-}
-
-.calendar__picture>h3{
-    padding-left: 25px;
-}
-
-.calendar__day:nth-child(7) {
-    color: #d0ace0;
-}
-
-.calendar__number:nth-child(7n) {
-    color: #d0ace0;
-    font-weight: 700;
-}
-
-.calendar__number--current, .calendar__number:hover {
-  background-color: #aca830;
-  color: #fff !important;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-/*End of calendar*/
-
-.calendar_content{
-    padding-top: 30px;
 }
 
 footer{
