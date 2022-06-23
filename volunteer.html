@@ -166,7 +166,7 @@
                     <p>New Volunteer</p>
                     <p>All the information is required</p>
                 </div>
-                <form action="get">
+                <form method="post">
                     <input type="text" name="name" id="name" placeholder="Name *">
                     <label for="name">Full Name</label>
                     <input type="email" name="email" id="email" placeholder="Email *">
@@ -188,7 +188,7 @@
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Message:"></textarea>
                     <br>
                     <div class="load_more">
-                        <button type="submit"><span>Submit</span></button>
+                        <button type="submit" onclick="checkForm()"><span>Submit</span></button>
                     </div>
                 </form>
             </div>

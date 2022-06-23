@@ -7,20 +7,6 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <script src='main.js'></script>
-    <link rel='stylesheet' href='main.css'/>
-    <script>
-
-      document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'dayGridMonth'
-        });
-        calendar.render();
-      });
-
-    </script>
-
     <title>Vancouver Shelter</title>
 </head>
 <body>
@@ -40,13 +26,16 @@
                     <nav class="navbar">
                         <ul class="nav-menu">
                             <li class="nav-item">
-                                <a href="about.html" class="nav-link">About Us</a>
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link" id="active">About Us</a>
                             </li>
                             <li class="nav-item">
                                 <a href="team.html" class="nav-link">Our Team</a>
                             </li>
                             <li class="nav-item">
-                                <a href="events.html" class="nav-link" id="active">Events</a>
+                                <a href="events.html" class="nav-link">Events</a>
                             </li>
                             <li class="nav-item">
                                 <a href="adopt.html" class="nav-link">Adopt</a>
@@ -66,8 +55,8 @@
         </div>
         <div class="header-content small">
             <div class="content-container">
-                <p>Events</p>
-                <h1>Be informed on next events</h1>
+                <p>About us</p>
+                <h1>Our past actions reflect our commitment towards the future</h1>
             </div>
         </div>
         <div class="button-area">
@@ -77,51 +66,6 @@
         </div>
     </header>
     <main>
-        <section class="events">
-            <div class="events_wrapper">
-                <div class="row">
-                    <p>Events</p>
-                    <h2>Check out our next Events</h2>
-                    <hr>
-                </div>
-                <div id="container_calendar">
-                    <div id="calendar"></div>
-                </div>
-                
-                  
-                <div class="calendar_content">
-                    <div class="event_text">
-                        <h3>June 25 - Adoption Fair at Sunset Beach</h3>
-                        <br>
-                        <p>Meet the lovely dogs and cats available for prompt adoption on Sunday, June 25th, at Sunset Beach.</p>
-                        <p>Please note that the adoptions will be approved with upfront payment of the adoption fee, and only after approval of the application.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="values">
-            <div class="introduction-values">
-                <h2>These are the values that guide our work</h2>
-                <p>Know a little more of why we do what we do</p>
-            </div>
-            <div class="values-wrapper">
-                <div class="value">
-                    <img src="images/mission.png" alt="The draw of a target on transparent background">
-                    <h3>Our Mission</h3>
-                    <p>We want to find a home for every single abandonned animal in great Vancouver area. An empty shelter would be a very happy place.</p>
-                </div>
-                <div class="value">
-                    <img src="images/vision.png" alt="The draw of an eye">
-                    <h3>Our Vision</h3>
-                    <p>We aim to be seen as a reference when it comes to finding a home for abandonned animals</p>
-                </div>
-                <div class="value">
-                    <img src="images/values.png" alt="The draw of a diamond">
-                    <h3>Our Values</h3>
-                    <p>We are passionate! The love for all animals and their uniqueness are gears to remember why we do this every single day.</p>
-                </div>
-            </div>
-        </section>
     </main>
     <footer>
         <div class="logo-footer">

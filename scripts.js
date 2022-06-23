@@ -1,3 +1,4 @@
+// Hamburguer menu for mobile
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -17,18 +18,20 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
+
+//Stick header into top of the page
+
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {stickHeader()};
 
 // Get the navbar
 var navbar = document.getElementById("stickyheader");
-// var header = document.getElementsByClassName("headerwrapper");
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
+function stickHeader() {
     if (window.pageYOffset >= sticky) {
       navbar.classList.add("sticky")
       navbar.classList.add("dark")
@@ -38,6 +41,7 @@ function myFunction() {
     }
 }
 
+//Load more function for news
 let loadMoreBtn = document.getElementById("load-more-btn");
 let currentItem = 1;
 
@@ -55,4 +59,20 @@ loadMoreBtn.onclick = () => {
       loadMoreBtn.style.display = "none";
     }
 
+}
+
+//Check if form is complete
+function checkForm(name, email, phone, address, city, message){
+  name = document.getElementById("name");
+  email = document.getElementById("email");
+  phone = document.getElementById("phone");
+  address = document.getElementById("address");
+  city = document.getElementById("city");
+  message = document.getElementById("message");
+
+  if (name.value== "" || email.value=="" || phone.value=="" || address.value=="" || city.value=="" || message.value==""){
+      alert("Please fill out all the form, thank you!");
+      return;
+  }
+  alert("To be implemented");
 }
