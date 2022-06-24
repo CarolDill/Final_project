@@ -730,6 +730,8 @@ header{
 .thead_pet{
     display: flex;
     flex-shrink: 0;
+    min-width: -webkit-min-content;
+    min-width: -moz-min-content;
     min-width: min-content;
 }
 
@@ -743,6 +745,8 @@ header{
 .tr_pet{
     display: flex;
     flex-direction: column;
+    min-width: -webkit-min-content;
+    min-width: -moz-min-content;
     min-width: min-content;
 }
 
@@ -797,8 +801,31 @@ td{
     color: #ffffff;
 }
 
-.form>form>label{
-    display: none;
+.form>form>.label-float{
+    margin: 1px 0;
+    padding-top: 0;
+}
+
+.form>form>div>label{
+    position: absolute;
+    font-size: 17px;
+    top: 0;
+    left: 15px;
+    color: #ffffff;
+    pointer-events: none;
+    transition: all .4s ease-out;
+}
+
+.form>form>div>input{
+    font-size: 16px;
+    background-color: #6c6c6c;
+    border: 0;
+    width: calc(100% - 10px);
+    padding: 20px 5px 10px 5px;
+}
+
+.form>form>div>input:focus + label{
+    font-size: 13px;
 }
 
 .form>form>input, textarea, fieldset{
@@ -816,6 +843,30 @@ fieldset{
 
 textarea{
     width: calc(100% - 43px);
+}
+
+
+.form>form>input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.form>form>input::-moz-placeholder, textarea::-moz-placeholder{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.form>form>input:-ms-input-placeholder, textarea:-ms-input-placeholder{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.form>form>input::-ms-input-placeholder, textarea::-ms-input-placeholder{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
 }
 
 

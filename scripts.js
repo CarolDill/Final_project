@@ -62,17 +62,18 @@ loadMoreBtn.onclick = () => {
 }
 
 //Check if form is complete
-function checkForm(name, email, phone, address, city, message){
-  name = document.getElementById("name");
-  email = document.getElementById("email");
-  phone = document.getElementById("phone");
-  address = document.getElementById("address");
-  city = document.getElementById("city");
-  message = document.getElementById("message");
-
-  if (name.value== "" || email.value=="" || phone.value=="" || address.value=="" || city.value=="" || message.value==""){
-      alert("Please fill out all the form, thank you!");
-      return;
+function checkform(form) {
+  // get all the inputs within the submitted form
+  var inputs = form.getElementsByTagName('input');
+  for (var i = 0; i < inputs.length; i++) {
+      // only validate the inputs that have the required attribute
+      if(inputs[i].hasAttribute("required")){
+          if(inputs[i].value == ""){
+              // found an empty field that is required
+              alert("Please fill all required fields");
+              return false;
+          }
+      }
   }
-  alert("To be implemented");
+  return true;
 }
