@@ -26,6 +26,7 @@ window.onscroll = function() {stickHeader()};
 
 // Get the navbar
 var navbar = document.getElementById("stickyheader");
+var test = document.getElementById("menulist");
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
@@ -33,11 +34,13 @@ var sticky = navbar.offsetTop;
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function stickHeader() {
     if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-      navbar.classList.add("dark")
+      navbar.classList.add("sticky");
+      navbar.classList.add("dark");
+      test.classList.add("scroll");
     } else {
       navbar.classList.remove("sticky");
       navbar.classList.remove("dark");
+      test.classList.remove("scroll");
     }
 }
 
@@ -76,4 +79,9 @@ function checkform(form) {
       }
   }
   return true;
+}
+
+//Set alert for button clicks
+function myAlert(){
+  alert("Function to be implemented, thank you!")
 }

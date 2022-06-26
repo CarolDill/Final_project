@@ -24,12 +24,12 @@
                 </div>
                 <div class="menu-toggle">
                     <nav class="navbar">
-                        <ul class="nav-menu">
+                        <ul class="nav-menu" id="menulist">
                             <li class="nav-item">
                                 <a href="index.html" class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="about.html" class="nav-link" id="active">About Us</a>
+                                <a href="about.html" class="nav-link">About Us</a>
                             </li>
                             <li class="nav-item">
                                 <a href="team.html" class="nav-link">Our Team</a>
@@ -43,6 +43,9 @@
                             <li class="nav-item">
                                 <a href="volunteer.html" class="nav-link">Volunteer</a>
                             </li>
+                            <li class="nav-item">
+                                <a href="lorem.html" class="nav-link"  id="active">Lorem</a>
+                            </li>
                         </ul>
                         <div class="hamburger">
                             <span class="bar"></span>
@@ -55,17 +58,143 @@
         </div>
         <div class="header-content small">
             <div class="content-container">
-                <p>About us</p>
-                <h1>Our past actions reflect our commitment towards the future</h1>
+                <p>Aenean commodo</p>
+                <h1>Lorem ipsum dolor!</h1>
             </div>
         </div>
         <div class="button-area">
             <div class="donate-button">
-                <button name="submit" class="donatebutton"><span>Donate Now</span></button>
+                <button name="submit" class="donatebutton" onclick="myAlert()"><span>Donate Now</span></button>
             </div>
         </div>
     </header>
     <main>
+        <section class="history">
+            <div class="section_wrapper">
+                <div class="history-texts">
+                    <h2>Lorem ipsum dolor!</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                        elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">fake hyperlink</a>
+                        Cum sociis natoque penatibus et magnis dis parturient 
+                        montes, nascetur ridiculus mus. Donec quam felis, 
+                        ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                    <p>&nbsp;</p>
+                    <ul>
+                        <li><i class="fa-solid fa-chevron-right"></i>YLorem ipsum dolor sit amet consectetuer.</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>Aenean commodo ligula eget dolor.</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>Aenean massa cum sociis natoque penatibus.</li>
+                    </ul>
+                    <p>Aenean vulputate 
+                        eleifend tellus. Aenean leo ligula, porttitor eu, 
+                        consequat vitae, eleifend ac, enim. Aliquam lorem ante, 
+                        dapibus in, viverra quis, feugiat a, tellus. Phasellus 
+                        viverra nulla ut metus varius laoreet. Quisque rutrum. 
+                        Aenean imperdiet. Etiam ultricies nisi vel augue. 
+                        Curabitur ullamcorper ultricies nisi. Integer tincidunt. Cras dapibus. 
+                        Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Integer tincidunt. Cras dapibus. 
+                        Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
+                </div>
+                <div class="history-img">
+                    <img 	src="https://via.placeholder.com/100/777.png" 
+                            class="article-image"
+                            alt="placeholder image" />
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <!-- <div class="row">
+                <p>Testimonials</p>
+                <h2>What People Say About Us</h2>
+                <hr>
+            </div> -->
+            <div class="testimony_wrapper single">
+                <div class="testimony">
+                    <i class="start-quote fas fa-quote-left" id="quotes"></i>
+                    <blockquote cite="https://www.opensourceshakespeare.org/views/plays/play_view.php?WorkID=othello&Act=5&Scene=2&Scope=scene">
+                        I am one who loved not wisely but too well.
+                    </blockquote>
+                    <div id="divider">
+                        <hr>
+                    </div>
+                    <cite>William Shakespeare, The Tragedy of Othello</cite>
+                </div>
+            </div>
+        </section>
+        <section class="history">
+            <article class="adoption">
+                <h3>Aenean commodo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                    elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                    Cum sociis natoque penatibus et magnis dis parturient 
+                    montes, nascetur ridiculus mus. Donec quam felis, 
+                    ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                <ol>
+                    <li>Lorem ipsum dolor sit amet consectetuer.</li>
+                    <li>Aenean commodo ligula eget dolor.</li>
+                    <li>Aenean massa cum sociis natoque penatibus.</li>
+                </ol>
+            </article>
+        </section>
+        <section class="history">
+            <article class="adoption">
+                <h3>Massa dolor</h3>
+                <p>Aenean commodo ligula eget dolor. Aenean massa. 
+                    Cum sociis natoque penatibus et magnis dis parturient 
+                    montes, nascetur ridiculus mus. Donec quam felis, 
+                    ultricies nec, pellentesque eu, pretium quis, sem.
+                </p>
+                <pre><code>/*Example CSS code*/
+                    h1{ 
+                        background-color:blue;
+                    }</code></pre>
+            </article>
+        </section>
+        <section class="history devide">
+            <div class="lorem_div">
+                <h4>Massa dolor</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                elit. Aenean tesque eu, pretium quis, sem.
+                </p>
+                <table>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>	
+                    </tr>
+                    <tr>
+                        <td>Row 1 Field 1</td>
+                        <td>Row 1 Field 2</td>
+                        <td>Row 1 Field 3</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2 Field 1</td>
+                        <td>Row 2 Field 2</td>
+                        <td>Row 2 Field 3</td>
+                    </tr>
+                    <tr>
+                        <td>Row 3 Field 1</td>
+                        <td>Row 3 Field 2</td>
+                        <td>Row 3 Field 3</td>
+                    </tr>
+                    <tr>
+                        <td>Row 4 Field 1</td>
+                        <td>Row 4 Field 2</td>
+                        <td>Row 4 Field 3</td>
+                    </tr>                        
+                </table>
+            </div>
+            <div class="lorem_div">
+                <h5>Massa dolor</h5>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                Cum sociis natoque penatibus et magnis dis parturient 
+                montes, nascetur ridiculus mus. Donec quam felis, 
+                ultricies nec, pellentesque eu, pretium quis, sem.
+                </p>
+                <h6>Massa dolor</h6>
+                <p>Lorem ipsum dolor sit amet, sem.</p>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="logo-footer">
